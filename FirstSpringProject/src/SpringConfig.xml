@@ -1,0 +1,11 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="welcomeBean" class="Org.Siva.Spring.Welcome">
+		<constructor-arg ref="DIBean"/>		
+	</bean>
+	
+	<bean id="DIBean" class="Org.Siva.Spring.DIclass"></bean>
+</beans>
